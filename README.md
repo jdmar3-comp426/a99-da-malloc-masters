@@ -25,6 +25,8 @@ Hello! Welcome to our final project, UNCClicker! In this incremental game, you t
 
 ## How to play
 
+Please feel free to check out the demo of our game [here](https://youtu.be/aV0hXlTXVlE).
+
 The general premise works like any other incremental game. Click the UNC Logo to get points, and start buying things in the shop to increase your points per second.
 
 ## The Shop and the Level Shop
@@ -51,9 +53,9 @@ The front end is split up between a couple different js files: countdown.js, sav
 
 For a breakdown of what is happening in main, click [here](./docs/main.md).
 
-To understand the countdown timer, click [here](./docs/countdown.md)
+To understand the countdown timer, click [here](./docs/countdown.md).
 
-For more on the team system, click here [here](./docs/teamsimulation.md)
+For more on the team system, click here [here](./docs/teamsimulation.md).
 
 # How It Works - Back End
 
