@@ -7,6 +7,7 @@
         "type": "git",
         "url": "git+https://github.com/jdmar3-comp426/a99-da-malloc-masters.git"
     },
+    "proxy": "http://localhost:8080",
     "author": "Ellis Kay",
     "license": "GPL-3.0-or-later",
   "scripts": {
