@@ -69,6 +69,6 @@ For more on the login and signup systems, click here [here](./docs/userInformati
 
 # Planning materials
 
-Majority of plannign was done through mini dev posts [here](https://github.com/orgs/jdmar3-comp426/teams/da-malloc-masters).
+Majority of planning was done through mini dev posts [here](https://github.com/orgs/jdmar3-comp426/teams/da-malloc-masters).
 
 Tasks were assigned through [trello](https://trello.com/b/VRMTkvog/dev) as well.
