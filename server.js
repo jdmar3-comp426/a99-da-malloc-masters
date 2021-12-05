@@ -64,17 +64,6 @@ app.get("/app/user/:id", (req, res) => {
 	  res.json(user);
 });
 
-
-app.post("/app/login/", (req, res) => {
-	const stmt = logindb.prepare("SELECT * FROM userinfo WHERE user = ? AND pass = ?");
-	const result = stmt.get(req.body.user, md5(req.body.pass));
-	if(result === undefined) {
-		res.status(404).json({"message":"Incorrect username or password. (404)"})
-	} else {
-		res.status(200).json(result);
-	}
-})
-
 // LOGIN for a single user at endpoint /app/login
 app.get("/app/login/:user/:pass", (req, res) => {	
 	const stmt = logindb.prepare("SELECT * FROM userinfo WHERE user = ? AND pass = ?");
