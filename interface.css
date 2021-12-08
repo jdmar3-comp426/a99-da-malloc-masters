@@ -1,0 +1,302 @@
+
+#loginButton {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border: ridge 2px black;
+    border-right: 0px;
+}
+
+#registerButton {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border: ridge 2px black;
+    border-right: 0px;
+}
+
+#saveButton {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border: ridge 2px black;
+    border-right: 0px;
+}
+
+#loadButton {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border: ridge 2px black;
+}
+
+#signOut {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border: ridge 2px black;
+}
+
+#upNextMatch { 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+#countdown {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#topNavBar {
+    background-color: skyblue;
+    border: groove 5px grey;
+}
+
+#record {
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.shop-item {
+    width: 100%;
+}
+
+.shop-button {
+    background-color: lightgrey;
+    border: ridge 5px darkgrey;
+    transition: all .2s ease-in-out;
+    width: 100%;
+    margin: 10px 9px 10px 0px;
+    border-radius: 10px;
+}
+
+.shop-button :hover{
+    background-color: #adc3d7;
+    transition: background-color .5s;
+    cursor: pointer;
+}
+
+.shop-button :hover + .tooltip {
+    display:block;
+}
+
+.tooltip {
+    display: none;
+    background: lightgrey;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    right: 20%;
+    width: 300px;
+    height: 150px;
+    font-size: 16px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shop-button :active {
+    background-color: grey;
+}
+
+.shop-button #image {
+    width: 64px;
+    vertical-align: middle;
+}
+
+.shop-button img {
+    height:64px;
+    width:64px;
+    vertical-align: middle;
+}
+
+.shop-button #nameAndPrice {
+    margin: 0px;
+    width: 60%;
+    vertical-align: middle;
+    padding-left: 12px;
+}
+
+.shop-button #buttonTitle {
+    font-weight: bold;
+}
+
+.shop-button #nameAndCost h1:first-of-type {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shop-button #amount {
+    font-size:40px;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 12px;
+}
+
+.shop-button #levelButton {
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 12px;
+}
+
+.levelHeader {
+    background-color: lightgrey;
+    border: groove 5px skyblue;
+    transition: all .2s ease-in-out;
+    width: 100%;
+    margin: 10px 9px 10px 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.levelHeader :hover + #levelTooltip {
+    display: block;
+}
+
+#levelTooltip {
+    display: none;
+    background: lightgrey;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    left: 20%;
+    width: 300px;
+    height: 150px;
+    font-size: 16px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.playerShop {
+    margin: auto;
+    display: inline-block;
+}
+
+.playerPortrait {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.bottomRow-item1 .playerPortrait :hover {
+    cursor: pointer;
+}
+
+.playerCaption {
+    display:block;
+    font-size: 10px;
+}
+
+.draftPointHeader {
+    transition: all .2s ease-in-out;
+    width: 100%;
+    margin: 10px 9px 10px 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.shopHeader {
+    background-color: lightgrey;
+    border: groove 5px skyblue;
+    transition: all .2s ease-in-out;
+    width: 100%;
+    margin: 10px 9px 10px 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.shopHeader :hover + .tooltip {
+    display: block;
+}
+
+.bottomRow {
+    height: 200px;
+    background-color: lightgrey;
+    border: ridge 10px skyblue;
+    transition: all .2s ease-in-out;
+    width: 100%;
+    margin: 10px 9px 10px 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottomRow-item1 {
+    flex:50%;
+    display: flex;
+    flex-direction: column;
+    border-right: ridge 5px skyblue;
+}
+
+.bottomRow-item2 {
+    flex:50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#stats {
+    width:600px;
+    height:100px;
+    float:left;
+}
+
+#scoreContainer {
+    background-color: lightgrey;
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: ridge 10px skyblue;
+}
+
+/* @property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+
+#points {
+    transition: --num 3s;
+    counter-set: num var(--num);
+    font-size: 60px;
+}
+
+#points::after {
+    content: counter(num);
+}
+
+div:hover {
+    --num: 100;
+} */
+
+#mainClicker:active {
+    background-color: #709ebf;
+    
+}
+
+.sectionLeft {
+    float: left;
+    width: 20%;
+}
+.sectionCenter {
+    display: inline-block;
+    width:60%;
+}
+.sectionRight {
+    float:right;
+    width: 20%;
+}
+
+#clickObject:hover {
+    transform: scale(1.10);
+}
+#clickObject:active {
+    transform: scale(0.90);
+}
+#clickObject {
+    position: relative;
+    transition: all .1s ease-in-out;
+}

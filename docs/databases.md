@@ -1,0 +1,3 @@
+# login_database.js and stats_database.js
+
+Both files use better-sqlite3 to create or retrieve an existing database. If the database does not already exist, a new one will be created with default information. Each entry in the login database has an id which is an integer as well as a 'user' and 'pass' which are both text. The stats database has entries which include an id which corresponds to an id in the login database, as well as wins, losses, points, etc. When the stats database is created, default, beginning of the game data will be entered into the stats database at id's 1 and 2. When the login database is created, entries at id's 1 and 2 will be created with the usernames 'admin', and 'test' and some long passwords. These are just here for testing purposes.

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Create an Account</title>
+          <link rel="stylesheet" href="login-page.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+          <script src="signup.js"></script>
+          <script src="https://kit.fontawesome.com/2eab6ed6e6.js" crossorigin="anonymous"></script>
+        </head>
+        
+        <body>
+          <section class="hero is-dark is-fullheight">
+            <div class="hero-body">
+              <div class="container">
+                <div class="columns is-centered is-mobile">
+                  <div class="column is-one-third">
+                    <form id="signup" action="" class="box">
+                      <div class="tabs">
+                        <ul>
+                          <li class="is-active" id="logintab" onclick="location.href='index.html';">
+                            <a>
+                              <span class="icon is-small">
+                                <i class="fas fa-sign-in-alt"></i>
+                              </span>
+                              <span>Log in</span>
+                            </a>
+                          </li>
+                          <li id="registertab" onclick="location.href='signup.html';">
+                            <a>
+                              <span class="icon is-small">
+                                <i class="fas fa-user-plus"></i>
+                              </span>
+                              <span>Register</span>
+                            </a>
+                          </li>
+                        </ul>
+                    <form id = "signup" class = "box">
+                      </div>
+                        <div class="field">
+                          <label for="" class="label" id="userlabel">Create Username</label>
+                          <div class="control has-icons-left">
+                            <input type="username" id="user" name="user" placeholder="mallocmaster123" value="" class="input" required>
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-user"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <label for="" class="label" id="passlabel">Create Password</label>
+                          <div class="control has-icons-left">
+                            <input type="password" id="pass" name="pass" placeholder="********" class="input" required>
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-lock"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="field has-addons has-addons-centered">
+                          <button class="button is-success" type="submit" id="submit">Register</button>
+                        </div>
+                      </div>
+                    </form>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </body>
+
+        </html>

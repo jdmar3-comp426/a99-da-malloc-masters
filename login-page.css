@@ -1,0 +1,11 @@
+li {
+  width: 50%;
+}
+
+#tab-content {
+  visibility: hidden;
+}
+
+#tab-content .is-active {
+  visibility: visible;
+}

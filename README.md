@@ -1,54 +1,74 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6381662&assignment_repo_type=AssignmentRepo)
-# a99 Finally
+# a99 UNCClicker
 
-COMP426 final project template repository. All your code and documentation goes here. Change this text to be a brief description of your final project. Put the name in the header above. You will change everything below to be the main technical documentation, as outlined below.
+Hello! Welcome to our final project, UNCClicker! In this incremental game, you take on the role of a new UNC Basketball coach, ready to build their team and defeat the opposing ACC teams. Buy different practice equipment to gain points which you can use to level up your teams stats. Every 10:00 minutes, your team will be pitted against another ACC team with similar stats as yours. Wins and losses are recorded, and depending on how hard you beat the opposing team you can earn draft points to draft current UNC Basketball players for permanent bonuses!
 
-## First steps
+## Our Team Members
+1. Front end lead: Ellis Kay (smelliskay)
+2. Back end lead: Wesley Lemons (wlemons1)
+3. Design lead: Jason Chay (jnchay)
+4. Database lead: Justin Adams (jmadams3)
+5. jboy953
 
-Other steps that you will need to take after you have cloned this repository:
+## Dependencies
+<code>"dependencies": {
+    "better-sqlite3": "^7.4.5",
+    "browser-sync": "^2.27.7",
+    "bulma": "^0.9.3",
+    "concurrently": "^6.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "md5": "^2.3.0",
+    "react": "^17.0.2"
+  }</code>
 
-1. Choose and update the LICENSE file accordingly. 
-2. Edit this README.md file and use it as the main location of your technical documentation with links out to information contained under `/docs/`.
-3. Create a `/docs/` directory for more elaborate documentation of your API, planning notes, etc.
-4. Make sure that all of your team members have access to the repository as administrators.
-5. Create a project under the **Projects** tab. Use this to manage your planning. Create a To-do list, etc. Explore the tools available and user them to manage your project.
-7. Assign team roles and include a listing of those roles in this README.md file or in another file under `/docs/`.
-8. Then put your entire development workflow in this repository.
-9. Use **Pull requests** to propose changes and incorporate them into your code from various team members. 
-10. Use **Issues** to identify and track bugs and also to communicate about various aspects of the project.
 
-## Team mangement
+## How to play
 
-Plan to meet with your team ASAP.
-Talk through identifying roles within your team.
+Please feel free to check out the demo of our game [here](https://youtu.be/aV0hXlTXVlE).
 
-Try to figure out what each of you are good at/enjoy doing and try to work out roles that incorporate that.
+The general premise works like any other incremental game. Click the UNC Logo to get points, and start buying things in the shop to increase your points per second.
 
-Some basic roles you will want to consider:
+## The Shop and the Level Shop
+![Image](./images/READMEIMAGES/shop.PNG)
+Here you can purchase different practice equipment, with each item getting more expensive the more you purchase. They give you increasingly more points per second. The level shop operates similarly, although the different stats dont directly give you more points per second.
 
-1. A review manager - someone to review pull requests and merge or reject them and manage the related discussions
-2. A plan manager - someone to keep an eye on the overall plan and keep the project tab/to-do list up to date
-3. A documentation manager - someone to keep the documentation in order and identify what is missing and needs to be documented
-4. Roles for team members to take charge or different parts of the project. Possible roles:
-    1. Front end lead
-    2. Back end lead
-    3. Databse lead
-    4. Design lead
-    5. Etc.
 
-You will notice that there are more roles than people in your group.
-That is because you will all be doing a hybrid job of managing a thing while working on other things.
+## Match System
+![Image](./images/READMEIMAGES/nextMatch.PNG)
+In the top left you will notice your teams record, the amount of time until the next match, and the Logo of the team you will be playing. The ACC team you are playing has randomized stats which are proportional to what your teams stats are. If at least 3 our of 5 of your stats are higher than your opponent's stats, then you win and obtain draft points proportional to how many stats of yours were higher than your opponent's.
 
-## Check in with instructional staff
+## Draft Points
+![Image](./images/READMEIMAGES/draftPoints.PNG)
+On the bottom left of your screen is the player shop, which you use draft points you get from winning matches to purchase the current UNC basketball lineup. In the future, more UNC players of past and present will be added with different bonuses.
 
-Once all the groups are together, we'll assign each group to an LA to check in with as you progress through the project.
+## Roster System
+![Image](./images/READMEIMAGES/roster.PNG)
+On the bottom right of your screen is your current roster. You have 5 slots for players to be in your starting lineup. Currently, every player you purchase increases your total pps by 50%, but in the future different players may give you different bonuses. Try to fill out your roster to maximize your pps!
 
-We will post that so that your team can schedule a time for an initial check-in with your assigned LA. It would be a good idea also to add your LA to your repository.
 
-## Assignment instructions
+# How It Works - Front End
 
-And that is about all you need to get started.
+The front end is split up between a couple different js files: countdown.js, saving.js, teamsimulation.js, and main.js.
 
-All the rest of the assignment instructions are available at: https://comp426.johndmart.in/assignments/99
+For a breakdown of what is happening in main, click [here](./docs/main.md).
 
-Good skill, and have fun with this!
+To understand the countdown timer, click [here](./docs/countdown.md).
+
+For more on the team system, click here [here](./docs/teamsimulation.md).
+
+# How It Works - Back End
+
+The back end is split up between a few different js files: server.js, login_database.js, stats_database.js, login.js, and signup.js.
+
+For a breakdown of how the server.js file works, click [here](./docs/server.md).
+
+For a breakdown of how the databases work, click [here](./docs/databases.md).
+
+For more on the login and signup systems, click [here](./docs/userInformation.md).
+
+# Planning materials
+
+Majority of planning was done through mini dev posts [here](https://github.com/orgs/jdmar3-comp426/teams/da-malloc-masters).
+
+Tasks were assigned through [trello](https://trello.com/b/VRMTkvog/dev) as well.
